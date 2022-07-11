@@ -7,3 +7,35 @@
   body {
     font-family: sans-serif;
   }
+
+  header{
+    width: 100%;
+    background-color: blue;
+  }
+
+  .barraNav{
+    display: flex;
+    height: 70px; /* da rimuovere */
+    margin: 0 210px;
+  }
+
+  .logo{
+    flex-grow: 0.5;
+    background-color: yellow;
+  }
+ 
+  .nav{
+    flex-grow: 2;
+    background-color: yellowgreen;
+  }
+ 
+  .accedi{
+    flex-grow: 0.5;
+    background-color: yellow;
+  }
+  
+
+
+  .barraPresentazione{
+
+  }
