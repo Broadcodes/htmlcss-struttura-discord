@@ -2,51 +2,101 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-  }
-  
-  body {
-    font-family: sans-serif;
-  }
+}
 
-  header{
+body {
+    font-family: sans-serif;
+}
+
+header {
     width: 100%;
-    background-color: rgb(239, 239, 239);
-  }
+    background-color: blue;
+}
+
+.flexbox {
+    display: flex;
+}
 
 /* Area superiore del Header, relativo alla barra di navigazione */
-  .barraNav{
-    display: flex;
-    height: 70px; /* da rimuovere */
+.barraNav {
+    height: 70px;
+    /* da rimuovere */
     margin: 0 210px;
-  }
+}
 
-  .logo{
+.logo {
     flex-grow: 0.5;
     background-color: yellow;
-  }
- 
-  .nav{
+}
+
+.nav {
     flex-grow: 2;
     background-color: yellowgreen;
-  }
- 
-  .accedi{
+}
+
+.accedi {
     flex-grow: 0.5;
     background-color: yellow;
-  }
-  
+}
+
 /* Area inferiore del Header, relativa all'area in cui è presente titolo, testo di presentazione e pulsanti */
-  .areaPrincipaleHeader{
+.areaPrincipaleHeader {
     text-align: center;
     margin: 0 400px;
     background-color: rgb(184, 255, 152);
-    height: 350px; /* da rimuovere */
-  }
+    height: 350px;
+    /* da rimuovere */
+}
 
-  .areaPrincipaleHeader h1 {
+.areaPrincipaleHeader h1 {
     padding: 80px 0 20px;
-  }
+}
 
-  .areaPrincipaleHeader p {
+.areaPrincipaleHeader p {
     padding: 20px 0 20px;
-  }
+}
+
+/* Area principale della pagina, contenenti immagini e testo */
+.areaContenitore {
+    background-color: rgb(255, 208, 208);
+    border-bottom: 3px dotted green;
+    justify-content: center;
+}
+
+/* ---------inizio area da eliminare--------- */
+.img {
+    border: 1px solid black;
+    width: 400px;
+    height: 350px;
+    margin: 100px 50px;
+}
+
+.contenutoTesto{
+    border: 1px solid black;
+    width: 250px;
+    height: 350px;
+    margin: 100px 50px;
+}
+
+.img2 {
+    border: 1px solid black;
+    width: 800px;
+    height: 450px;
+    margin: 50px 50px;
+}
+
+.contenutoTesto2 {
+    border: 1px solid black;
+    width: 800px;
+    height: 100px;
+    margin: 50px 50px;
+}
+/* ---------fine area da eliminare--------- */
+
+.flex-direction{
+    flex-direction: column;
+}
+
+.align-items{
+    align-items: center;
+}
