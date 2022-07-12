@@ -21,33 +21,35 @@ header {
 
 /* Area superiore del Header, relativo alla barra di navigazione */
 .barraNav {
-    height: 70px;
-    /* da rimuovere */
-    margin: 0 210px;
+    height: 70px;    /* da rimuovere */
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 .logo {
-    flex-grow: 0.5;
+    flex-basis: 15%;
     background-color: yellow;
 }
 
 .nav {
-    flex-grow: 2;
+    flex-basis: 70%;
     background-color: yellowgreen;
+    justify-content: center;
+    align-items: center;
 }
 
 .accedi {
-    flex-grow: 0.5;
+    flex-basis: 15%;
     background-color: yellow;
 }
 
 /* Area inferiore del Header, relativa all'area in cui è presente titolo, testo di presentazione e pulsanti */
 .areaPrincipaleHeader {
     text-align: center;
-    margin: 0 400px;
+    margin: 0 auto;
+    max-width: 700px;
     background-color: rgb(184, 255, 152);
-    height: 350px;
-    /* da rimuovere */
+    height: 350px;    /* da rimuovere */
 }
 
 .areaPrincipaleHeader h1 {
@@ -62,28 +64,34 @@ header {
 .areaContenitore {
     background-color: rgb(142, 232, 255);
     border-bottom: 3px dotted green;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
-/* ---------inizio area da eliminare--------- */
 .areaContenitore:nth-child(even) {
     background-color: rgb(142, 167, 255);
 }
 
+/* ---------inizio area da modificare--------- */
 .img {
     border: 1px solid black;
-    width: 400px;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
     height: 350px;
-    margin: 100px 50px;
+    margin: 50px 50px;
+    flex-basis: 70%;
 }
 
 .contenutoTesto {
-    border: 1px solid black;
-    width: 250px;
-    height: 350px;
-    margin: 100px 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    flex-basis: 30%;
 }
 
+/* ---------inizio area da eliminare--------- */
 .img2 {
     border: 1px solid black;
     width: 800px;
@@ -92,7 +100,6 @@ header {
 }
 
 .contenutoTesto2 {
-    border: 1px solid black;
     width: 800px;
     height: 100px;
     margin: 50px 50px;
@@ -110,16 +117,16 @@ header {
 
 footer {
     background-color: blue;
-    padding: 0 210px;
 }
 
 /* Area superiore della pagina, contenenti area social e link */
 .areaSuperioreFooter {
-    background-color: rgb(162, 207, 219);
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .areaSocial {
-    flex-grow: 2;
+    flex-basis: 30%;
     background-color: yellow;
 }
 
@@ -131,7 +138,7 @@ footer {
 }
 
 .areaLink{
-    flex-grow: 1;
+    flex-basis: calc(70% / 4);
     background-color: goldenrod;
     gap: 10px;
 }
